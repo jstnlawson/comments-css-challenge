@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <script src="scripts.js"></script>
   <title>CSS Challenge | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,38 +23,84 @@
 <body>
 
   <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+  <div class="grid-container">
+
+   <button class="plus-btn">+</button>
+   <button class="display-btn">12</button>
+   <button class="minus-btn">-</button>
+
+    <div class="header-div">
+      <span class="comment-banner">
+        <img src="./images/avatars/image-amyrobson.png" alt="profile" class="profile-image"/>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+        <span class="user-name">amyrobson</span> 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="post-time">1 month ago</span>
+        <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
+      </span>
+    </div>
+    <div class="post-div">
+      <span class="post-text">
+        Impressive! Though it seems the drag feature could be improved. But overall it looks 
+        incredible. You've nailed the design and the responsiveness at various breakpoints 
+        works really well.
+      </span>
+    </div>
+  </div>
+
 
   <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+  <div class="grid-container">
 
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
+    <button class="plus-btn">+</button>
+    <button class="display-btn">5</button>
+    <button class="minus-btn">-</button>
+ 
+     <div class="header-div">
+       <span class="comment-banner">
+        <img src="./images/avatars/image-maxblagun.png" alt="profile" class="profile-image"/>
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+         <span class="user-name">maxblagun</span> 
+         &nbsp;&nbsp;&nbsp;&nbsp;
+         <span class="post-time">2 weeks ago</span>
+         <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
+       </span>
+     </div>
+     <div class="post-div">
+       <span class="post-text">
+        Woah, your project looks awesome! How long have you been coding for? I'm still new, 
+        but think I want to dive into React as well soon. Perhaps you can give me an insight 
+        on where I can learn React? Thanks!
+       </span>
+     </div>
+   </div>
+  
+
+   <!-- <-- Comment #3 (Reply to comment #2) -->
+   <div class="posted-reply-container">
+
+
+
+   </div>
+   
+  <!-- 4
   <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
   ramsesmiron 
   1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first. -->
 
   <!-- Comment #4 (Reply to comment #2) -->
-  2
+  <!-- 2
   <img src="./images/avatars/image-juliusomo.png" alt="profile" />
   juliusomo 
   2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant. -->
 
 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> --> 
 </body>
 </html>
