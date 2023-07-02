@@ -182,12 +182,14 @@ font-size: 16px;
 
 #send-btn {
     display: grid;
-    grid-area: 3 / 54 / span 3 / span 7;
+    grid-area: 3 / 53 / span 4 / span 8;
     background-color: #5357b6;
     color: #f6f6f8;
     align-items: center;
     border: none;
-    border-radius: 6px
+    border-radius: 6px;
+    font-size: 15px;
+    
 }
 
 .user-name {
