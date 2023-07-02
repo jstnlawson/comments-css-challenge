@@ -1,3 +1,6 @@
+/* After some frustration trying to get everything sort of in place for awhile 
+I decided to use grid */
+
 body  {
     margin-top: 45px;
     font-size: 16px;
@@ -5,6 +8,7 @@ body  {
     font-family: system-ui, sans-serif;
 }
 
+/* i added the box shadow that wasn't in the picture, it made it easier to stare at all day */
 .grid-container {
     display: grid;
     grid-template: repeat(15, 1fr) / repeat(62, 1fr);
@@ -39,7 +43,9 @@ body  {
     margin-left: auto;
     margin-right: auto;
 }
-
+/* I put this container on top of the other so I could connect the post with the line
+on the left side, probably an easier wat to do the line but this is what I thought
+of */
 .indented-reply-container {
     display: grid;
     grid-area: 1 / 8 / span 15 / span 55;
@@ -48,6 +54,46 @@ body  {
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 2px #0002;
+}
+
+.user-reply-container {
+    display: grid;
+    grid-area: 1 / 8 / span 15 / span 55;
+    grid-template: repeat(15, 1fr) / repeat(55, 1fr);
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #0002;
+}
+
+.you-box {
+    display: inline-flex;
+    background-color: #5357b6;
+    color: #f6f6f8;
+    font-size: 13px;
+    font-weight: 600;
+    align-items: center;
+    padding: 0 5px 3px 5px;
+}
+
+#delete-btn {
+    margin-left: 125px;
+    border: none;
+    background-color: white;
+    color: #ed6468;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#edit-btn {
+    float: right;
+    margin-right: 20px;
+    margin-top: 3px;
+    border: none;
+    background-color: white;
+    color: #5357b6;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .post-connector {
@@ -91,6 +137,7 @@ body  {
     border: none;
     align-items: center;
     background-color: #f6f6f8;
+    font-size: 16px;
 }
 
 .header-div {
@@ -129,7 +176,8 @@ body  {
 #text-input::-webkit-input-placeholder {
 padding-top: 10px;
 padding-left: 20px;
-color: rgb(152, 150, 150);
+color: rgb(131, 126, 126);
+font-size: 16px;
 }
 
 #send-btn {

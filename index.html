@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="scripts.js"></script>
+  <!-- had to move script.js to the bottom to get the functions to work, not positive why -->
   <title>CSS Challenge | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,6 +19,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  
 </head>
 <body>
 
@@ -32,9 +33,9 @@
     <div class="header-div">
       <span class="comment-banner">
         <img src="./images/avatars/image-amyrobson.png" alt="profile" class="profile-image"/>
-        &nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp; 
         <span class="user-name">amyrobson</span> 
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <span class="post-time">1 month ago</span>
         <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
       </span>
@@ -59,9 +60,9 @@
      <div class="header-div">
        <span class="comment-banner">
         <img src="./images/avatars/image-maxblagun.png" alt="profile" class="profile-image"/>
-        &nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp; 
          <span class="user-name">maxblagun</span> 
-         &nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;
          <span class="post-time">2 weeks ago</span>
          <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
        </span>
@@ -87,9 +88,9 @@
         <div class="indented-header-div">
           <span class="comment-banner">
            <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="profile-image"/>
-           &nbsp;&nbsp;&nbsp;&nbsp; 
+           &nbsp;&nbsp;&nbsp; 
             <span class="user-name">ramsesmiron</span> 
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
             <span class="post-time">1 week ago</span>
             <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
           </span>
@@ -105,7 +106,7 @@
   <!-- Comment #4 (Reply to comment #2) -->
   <div class="posted-reply-container">
     <div class="newest-post-connector"></div>
-      <div class="indented-reply-container">
+      <div class="user-reply-container">
         <button class="plus-btn">+</button>
         <button class="display-btn">2</button>
         <button class="minus-btn">-</button>
@@ -113,11 +114,12 @@
         <div class="indented-header-div">
           <span class="comment-banner">
            <img src="./images/avatars/image-juliusomo.png" alt="profile" class="profile-image"/>
-           &nbsp;&nbsp;&nbsp;&nbsp; 
-            <span class="user-name">juliusomo</span> 
-            &nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp; 
+            <span class="user-name">juliusomo<span>&nbsp;&nbsp;</span><span class="you-box"> you</span></span> 
+            &nbsp;&nbsp;&nbsp;
             <span class="post-time">2 days ago</span>
-            <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
+            <button id="delete-btn"><img src="./images/icon-delete.svg" alt="delete-icon"> Delete</button>
+            <button id="edit-btn"><img src="./images/icon-edit.svg" alt="edit-icon">Edit</button>
           </span>
         </div>
         <div class="indented-post-div">
@@ -127,16 +129,17 @@
         </div>
       </div>
    </div>
-  
-  <!-- <div class="attribution"> -->
+ 
   <div class="post-container">
     <img src="./images/avatars/image-juliusomo.png" alt="profile" class="posting-image"/>
     <textarea id="text-input" placeholder="Add a comment..."></textarea>
     <button type="submit" id="send-btn">SEND</button>
-
   </div>
-    <!-- Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+  
+  <!-- <div class="attribution"> -->
+  <!-- Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> --> 
+  <script src="scripts.js"></script>
 </body>
 </html>
