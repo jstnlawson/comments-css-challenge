@@ -9,7 +9,20 @@ body  {
     display: grid;
     grid-template: repeat(15, 1fr) / repeat(62, 1fr);
     width: 725px;
-    height: 150px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #0002;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.post-container {
+    display: grid;
+    grid-template: repeat(13, 1fr) / repeat(62, 1fr);
+    width: 725px;
+    height: 140px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 2px #0002;
@@ -19,7 +32,36 @@ body  {
 }
 
 .posted-reply-container {
-    
+    display: grid;
+    grid-template: repeat(17, 1fr) / repeat(62, 1fr);
+    width: 725px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indented-reply-container {
+    display: grid;
+    grid-area: 1 / 8 / span 15 / span 55;
+    grid-template: repeat(15, 1fr) / repeat(55, 1fr);
+    height: 160px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #0002;
+}
+
+.post-connector {
+    display: grid;
+    grid-area: 1 / 1 / span 17 / span 4; 
+    border-right: solid 1px #cccbdc;
+    margin-right: 5px;
+}
+
+.newest-post-connector {
+    display: grid;
+    grid-area: 1 / 1 / span 15 / span 4; 
+    border-right: solid 1px #cccbdc;
+    margin-right: 5px;
 }
 
 .plus-btn {
@@ -53,14 +95,51 @@ body  {
 
 .header-div {
     display: grid;
-    grid-area: 3 / 9 / span 3 / span 54;
+    grid-area: 3 / 8 / span 3 / span 55;
     background-color: #fff;
     
+}
+
+.indented-header-div {
+    display: grid;
+    grid-area: 3 / 8 / span 3 / span 48;
+    background-color: #fff;
 }
 
 .profile-image {
     height: 30px;
     vertical-align: middle;
+}
+
+.posting-image {
+    height: 40px;
+    display: grid;
+    grid-area: 3 / 3 / span 3 / span 3;
+}
+
+#text-input {
+    display: grid;
+    grid-area: 3 / 8 / span 9 / span 44;
+    font-family: system-ui, sans-serif;
+    resize: none;
+    border-radius: 6px;
+    border-color: #cccbdc;
+}
+
+#text-input::-webkit-input-placeholder {
+padding-top: 10px;
+padding-left: 20px;
+color: rgb(152, 150, 150);
+}
+
+#send-btn {
+    display: grid;
+    grid-area: 3 / 54 / span 3 / span 7;
+    background-color: #5357b6;
+    color: #f6f6f8;
+    align-items: center;
+    border: none;
+    border-radius: 6px
 }
 
 .user-name {
@@ -73,98 +152,33 @@ body  {
 
 .reply-button {
     float: right;
-    height: 25px;
+    height: 30px;
     width: 100px;
     margin: 0;
     border: none;
     background-color: white;
     color: #5357b6;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .post-div {
     display: grid;
-    grid-area: 8 / 9 / span 6 / span 50;
+    grid-area: 8 / 8 / span 6 / span 51;
     background-color: #fff;
+}
+
+.indented-post-div {
+    display: grid;
+    grid-area: 8 / 8 / span 6 / span 45;
+    background-color: #fff;
+}
+
+.at-name {
+    color: #5357b6;
+    font-weight: bold;
 }
 
 .post-text {
     color: gray;
 }
-
-.button-container {
-    width: 25px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.add-button, .number-display, .minus-button {
-    
-    width: 30px;
-    height: 25px;
-    border: none;
-}
-
-.add-button {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    color: gray;
-}
-
-.number-display {
-    color: #5357b6;
-    font-weight: bold;
-}
-
-.minus-button {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    color: gray;
-}
-
-.user-image {
-    height: 25px;
-    vertical-align: middle;
-}
-
-.comment-header {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    background-color: #fff;
-    width: 100%;
-    height: 25px; 
-    padding-left: 13px;
-}
-
-.time-posted {
-    font-weight: lighter;
-    color: gray;
-}
-
-.reply-button {
-    float: right;
-    height: 25px;
-    width: 100px;
-    margin: 0;
-    border: none;
-    background-color: white;
-    color: #5357b6;
-    font-weight: bold;
-}
-
-
-
-.main-container {
-    display: flex;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px #0002;
-    width: 600px;
-    height: auto;
-    padding: 8px;
-    overflow: hidden;
-    margin-bottom: 12px;
-}
-

@@ -78,28 +78,64 @@
 
    <!-- <-- Comment #3 (Reply to comment #2) -->
    <div class="posted-reply-container">
+    <div class="post-connector"></div>
+      <div class="indented-reply-container">
+        <button class="plus-btn">+</button>
+        <button class="display-btn">4</button>
+        <button class="minus-btn">-</button>
 
-
-
+        <div class="indented-header-div">
+          <span class="comment-banner">
+           <img src="./images/avatars/image-ramsesmiron.png" alt="profile" class="profile-image"/>
+           &nbsp;&nbsp;&nbsp;&nbsp; 
+            <span class="user-name">ramsesmiron</span> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="post-time">1 week ago</span>
+            <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
+          </span>
+        </div>
+        <div class="indented-post-div">
+          <span class="post-text">
+            <span class="at-name">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first. 
+          </span>
+        </div>
+      </div>
    </div>
    
-  <!-- 4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first. -->
-
   <!-- Comment #4 (Reply to comment #2) -->
-  <!-- 2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant. -->
+  <div class="posted-reply-container">
+    <div class="newest-post-connector"></div>
+      <div class="indented-reply-container">
+        <button class="plus-btn">+</button>
+        <button class="display-btn">2</button>
+        <button class="minus-btn">-</button>
 
-
+        <div class="indented-header-div">
+          <span class="comment-banner">
+           <img src="./images/avatars/image-juliusomo.png" alt="profile" class="profile-image"/>
+           &nbsp;&nbsp;&nbsp;&nbsp; 
+            <span class="user-name">juliusomo</span> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="post-time">2 days ago</span>
+            <button class="reply-button"><img src="./images/icon-reply.svg" alt="reply arrow"> Reply</button>
+          </span>
+        </div>
+        <div class="indented-post-div">
+          <span class="post-text">
+            <span class="at-name">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant. 
+          </span>
+        </div>
+      </div>
+   </div>
   
-  <!-- <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+  <!-- <div class="attribution"> -->
+  <div class="post-container">
+    <img src="./images/avatars/image-juliusomo.png" alt="profile" class="posting-image"/>
+    <textarea id="text-input" placeholder="Add a comment..."></textarea>
+    <button type="submit" id="send-btn">SEND</button>
+
+  </div>
+    <!-- Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> --> 
 </body>
